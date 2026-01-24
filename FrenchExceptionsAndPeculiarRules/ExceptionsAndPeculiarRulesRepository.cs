@@ -8,7 +8,7 @@ public class ExceptionsAndPeculiarRulesRepository
             textWhereNoticed: "Combien de livres as-tu lus cette année ?",
             mainActor: "de",
             explanation: "Après une expression de quantité comme « combien », « beaucoup », « peu », « trop » ou « assez », le français utilise « de » et non l’article pluriel « des ». L’expression de quantité indique déjà une quantité indéfinie.",
-            notes: "Correct : « Combien de livres… » ❌ Incorrect : « Combien des livres… ». L’article « des » s’utilise uniquement en l’absence d’une expression de quantité, par exemple : « Je lis des livres. »"
+            notes: "Correct : « Combien de livres… »  Incorrect : « Combien des livres… ». L’article « des » s’utilise uniquement en l’absence d’une expression de quantité, par exemple : « Je lis des livres. »"
         ),
 
         new ExceptionRule(
@@ -24,9 +24,9 @@ public class ExceptionsAndPeculiarRulesRepository
             explanation: "Lorsque « personne » est le sujet d’une phrase négative, il exprime déjà la négation et remplace « pas ». Il s’emploie donc avec « ne » mais **sans « pas »**, et il précède le verbe : « Personne n’est venu ». Cette inversion du sujet négatif avec le verbe est typique en français. " +
                          "À la différence de « rien », « pas » ou « jamais » (qui suivent l’auxiliaire), le sujet « personne » se place avant le verbe et entraîne l’usage de « ne » avec le verbe.",
             notes: "Exemples :\n" +
-                   "Sujet : « Personne n’est venu » (= nobody came) ✅\n" +
-                   "Objet : « Je n’ai vu personne » (= I saw no one) ✅\n" +
-                   "Incorrect : « Personne n’est pas venu » ❌\n" +
+                   "Sujet : « Personne n’est venu » (= nobody came) \n" +
+                   "Objet : « Je n’ai vu personne » (= I saw no one) \n" +
+                   "Incorrect : « Personne n’est pas venu » \n" +
                    "Règle : Sujet négatif « personne » → personne + ne + verbe (pas de « pas »); Objet négatif « personne » → ne + verbe + personne."
         ),
 
@@ -44,6 +44,21 @@ public class ExceptionsAndPeculiarRulesRepository
                    "Règle : Rien, pas, que → avant le participe passé; Personne → après le participe passé (quand c’est l’objet)."
         ),
 
-
+        new ExceptionRule(
+            textWhereNoticed: "À quoi penses-tu ? vs Que fais-tu ?",
+            mainActor: "quoi / que",
+            explanation: "En français, le choix entre « que » et « quoi » dépend de la présence d’une préposition :\n" +
+                         "- « que » s’emploie comme **complément d’objet direct** du verbe, sans préposition : « Que fais-tu ? »\n" +
+                         "- « quoi » s’emploie comme **complément d’objet d’une préposition** (à, de, avec, etc.) : « À quoi penses-tu ? », « De quoi parles-tu ? »\n" +
+                         "Il est donc grammaticalement impossible de mettre « que » après une préposition :  « À que penses-tu ? »",
+            notes: "Exemples :\n" +
+                   "Correct : « Que fais-tu ? » (que = objet direct de faire) \n" +
+                   "Correct : « À quoi penses-tu ? » (quoi = objet de la préposition à) \n" +
+                   "Correct : « De quoi parles-tu ? » (quoi = objet de la préposition de) \n" +
+                   "Incorrect : « À que penses-tu ? » \n" +
+                   "Règle rapide : après une préposition → utiliser « quoi » ; comme objet direct → utiliser « que »."
+        ),
+        
+        
     };
 }
