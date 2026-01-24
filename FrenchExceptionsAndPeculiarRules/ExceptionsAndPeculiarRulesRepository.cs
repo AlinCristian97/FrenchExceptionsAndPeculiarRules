@@ -75,5 +75,25 @@ public class ExceptionsAndPeculiarRulesRepository
                    "Règle rapide : objet direct → « que » ; après préposition → « quoi »."
         ),
 
+        new ExceptionRule(
+            textWhereNoticed: "Que fais-tu ? vs Tu fais quoi ?",
+            mainActor: "que / quoi",
+            explanation: "En français, le choix entre « que » et « quoi » dépend du style et de la position dans la question :\n" +
+                         "- Dans les questions formelles / écrites, on utilise l’inversion et « que » avant le verbe : « Que fais-tu ? », « Que manges-tu ? »\n" +
+                         "- Dans les questions informelles / parlées, le mot « quoi » se place après le verbe : « Tu fais quoi ? », « Tu manges quoi ? »\n" +
+                         "Il est incorrect d’utiliser « que » à la fin d’une question : « Tu fais que ? »",
+            notes: "Exemples :\n" +
+                   "Formel (inversion) :\n" +
+                   "• « Que manges-tu ? »\n" +
+                   "• « Que fais-tu ce soir ? »\n" +
+                   "• « Que veux-tu ? »\n" +
+                   "Informel (oral) :\n" +
+                   "• « Tu manges quoi ? »\n" +
+                   "• « Tu fais quoi ce soir ? »\n" +
+                   "• « Tu veux quoi ? »\n" +
+                   "Règle rapide : Forme formelle / inversion → « que » avant le verbe ; Forme informelle / parlée → « quoi » après le verbe."
+        ),
+
+        
     };
 }
