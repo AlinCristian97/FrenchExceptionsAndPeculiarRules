@@ -59,6 +59,21 @@ public class ExceptionsAndPeculiarRulesRepository
                    "Règle rapide : après une préposition → utiliser « quoi » ; comme objet direct → utiliser « que »."
         ),
         
-        
+        new ExceptionRule(
+            textWhereNoticed: "Que manges-tu ? / Que fais-tu ? vs De quoi parles-tu ?",
+            mainActor: "que / quoi",
+            explanation: "Le choix entre « que » et « quoi » dépend de la présence d’un objet direct ou d’une préposition :\n" +
+                         "- Si le verbe agit directement sur un objet, on utilise « que » : « Que manges-tu ? », « Que fais-tu ? »\n" +
+                         "- Si le verbe nécessite une préposition pour compléter son sens, on utilise « quoi » après la préposition : « De quoi parles-tu ? », « À quoi penses-tu ? »",
+            notes: "Exemples :\n" +
+                   "Verbe avec objet direct :\n" +
+                   "• « Que manges-tu ? » (manger → objet direct)\n" +
+                   "• « Que fais-tu ? » (faire → objet direct)\n" +
+                   "Verbe avec préposition :\n" +
+                   "• « De quoi parles-tu ? » (parler → besoin de préposition « de »)\n" +
+                   "• « À quoi penses-tu ? » (penser → besoin de préposition « à »)\n" +
+                   "Règle rapide : objet direct → « que » ; après préposition → « quoi »."
+        ),
+
     };
 }
