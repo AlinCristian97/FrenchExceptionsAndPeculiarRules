@@ -94,6 +94,17 @@ public class ExceptionsAndPeculiarRulesRepository
                    "Règle rapide : Forme formelle / inversion → « que » avant le verbe ; Forme informelle / parlée → « quoi » après le verbe."
         ),
 
-        
+        new ExceptionRule(
+            textWhereNoticed: "Il y a des fleurs",
+            mainActor: "a",
+            explanation: "Dans l’expression « il y a », le verbe « avoir » reste toujours à la troisième personne du singulier (« a »), même si le nom qui suit est au pluriel. Le sujet grammatical est le « il » impersonnel, et non le nom pluriel.",
+            notes: "Exemples :\n" +
+                   "• Il y a un chat. → singulier\n" +
+                   "• Il y a des fleurs. → pluriel\n" +
+                   "• Il y a beaucoup de livres. → pluriel\n" +
+                   "Incorrect : Il y ont des fleurs\n" +
+                   "Règle rapide : l’expression « il y a » est fixe ; le verbe ne change jamais, quelle que soit la quantité ou le nombre du nom."
+        ),
+
     };
 }
