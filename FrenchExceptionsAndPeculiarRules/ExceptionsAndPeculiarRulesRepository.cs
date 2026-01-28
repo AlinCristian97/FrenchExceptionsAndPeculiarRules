@@ -5,6 +5,19 @@ public class ExceptionsAndPeculiarRulesRepository
     public readonly List<ExceptionRule> ExceptionsAndPeculiarRules = new()
     {
         new ExceptionRule(
+            textWhereNoticed: "Ce sont mes frères",
+            mainActor: "ce",
+            explanation: "Dans la structure « Ce + être + nom », « ce » est un pronom neutre qui ne s’accorde pas avec le nom qui suit. Il reste toujours « ce » (singulier) ou « ce sont » pour le pluriel du verbe, même si le nom est pluriel ou féminin.",
+            notes: "Exemples :\n" +
+                   "• Ce livre est intéressant. → singulier, masculin\n" +
+                   "• Cette maison est grande. → singulier, féminin\n" +
+                   "• Ce sont mes frères. → pluriel, nom masculin\n" +
+                   "• Ce sont mes sœurs. → pluriel, nom féminin\n" +
+                   "Incorrect : Ces sont mes frères \n" +
+                   "Règle rapide : Avec « être » comme verbe, utiliser « ce » (neutre) et non « ces » ; le pronom ne s’accorde jamais avec le nom."
+        ),
+
+        new ExceptionRule(
             textWhereNoticed: "Combien de livres as-tu lus cette année ?",
             mainActor: "de",
             explanation: "Après une expression de quantité comme « combien », « beaucoup », « peu », « trop » ou « assez », le français utilise « de » et non l’article pluriel « des ». L’expression de quantité indique déjà une quantité indéfinie.",
