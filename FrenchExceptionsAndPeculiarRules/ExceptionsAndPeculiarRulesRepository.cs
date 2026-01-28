@@ -5,6 +5,19 @@ public class ExceptionsAndPeculiarRulesRepository
     public readonly List<ExceptionRule> ExceptionsAndPeculiarRules = new()
     {
         new ExceptionRule(
+            textWhereNoticed: "Je voudrais un verre de vin",
+            mainActor: "« de » after quantity",
+            explanation: "En français, lorsqu’un nom est précédé d’une expression de quantité ou d’une mesure (un verre, une bouteille, un kilo, beaucoup, peu, trop), on utilise uniquement « de » devant le nom et **pas le partitif du / de la / des**. La quantité spécifie déjà combien, donc le partitif n’est pas nécessaire.",
+            notes: "Exemples :\n" +
+                   "• Je veux du vin → je veux du vin (partitif, quantité non spécifiée)\n" +
+                   "• Je voudrais un verre de vin → un verre = quantité, on utilise de seul\n" +
+                   "• Une bouteille de jus → quantité, on utilise de\n" +
+                   "• Un kilo de pommes → quantité, on utilise de\n" +
+                   "• Beaucoup de travail → expression de quantité, on utilise de\n" +
+                   "Règle rapide : après une mesure ou expression de quantité → utiliser « de » seul, pas le partitif."
+        ),
+
+        new ExceptionRule(
             textWhereNoticed: "Ce sont mes frères",
             mainActor: "ce",
             explanation: "Dans la structure « Ce + être + nom », « ce » est un pronom neutre qui ne s’accorde pas avec le nom qui suit. Il reste toujours « ce » (singulier) ou « ce sont » pour le pluriel du verbe, même si le nom est pluriel ou féminin.",
