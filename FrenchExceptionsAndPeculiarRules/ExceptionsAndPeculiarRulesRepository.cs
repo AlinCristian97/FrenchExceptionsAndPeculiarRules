@@ -5,6 +5,20 @@ public class ExceptionsAndPeculiarRulesRepository
     public readonly List<ExceptionRule> ExceptionsAndPeculiarRules = new()
     {
         new ExceptionRule(
+                textWhereNoticed: "un nouvel épisode / un nouveau film / un épisode intéressant",
+                mainActor: "nouveau / nouvel",
+                explanation: "L’adjectif « nouveau » appartient au groupe BAGS (Beauty, Age, Goodness, Size) et **se place avant le nom**. " +
+                             "Il change de forme en « nouvel » devant un nom masculin singulier commençant par une voyelle ou un h muet pour faciliter la prononciation.",
+                notes: "Exemples :\n" +
+                       "• un nouvel épisode → masculin singulier, nom commence par voyelle\n" +
+                       "• un nouveau film → masculin singulier, nom commence par consonne\n" +
+                       "• un épisode intéressant → adjectif descriptif normal, va après le nom\n" +
+                       "Règle rapide :\n" +
+                       "1. BAGS → avant le nom, nouveau → nouvel devant voyelle/h muet\n" +
+                       "2. Descriptifs → après le nom"
+            ),
+
+        new ExceptionRule(
             textWhereNoticed: "Il est un peu fatigué / Le français devient un peu plus souple",
             mainActor: "un peu",
             explanation: "L’expression « un peu » combine l’article indéfini « un » et le nom « peu » pour former une **locution adverbiale**. " +
