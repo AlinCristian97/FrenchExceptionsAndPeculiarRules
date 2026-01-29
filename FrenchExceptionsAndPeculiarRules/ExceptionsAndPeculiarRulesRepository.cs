@@ -5,6 +5,24 @@ public class ExceptionsAndPeculiarRulesRepository
     public readonly List<ExceptionRule> ExceptionsAndPeculiarRules = new()
     {
         new ExceptionRule(
+            textWhereNoticed: "Ce livre est intéressant / Cet homme est gentil / Cette voiture est rouge",
+            mainActor: "ce / cet / cette",
+            explanation: "En français, les adjectifs démonstratifs changent selon le genre, le nombre et la première lettre du nom :\n" +
+                         "- « Ce » → masculin singulier, devant une consonne : Ce livre est intéressant.\n" +
+                         "- « Cet » → masculin singulier, devant une voyelle ou un h muet : Cet homme est gentil.\n" +
+                         "- « Cette » → féminin singulier : Cette voiture est rouge.\n" +
+                         "Ils signifient tous « this » ou « that » en anglais et s’accordent avec le nom qu’ils déterminent.",
+            notes: "Exemples :\n" +
+                   "• Ce chien est mignon → masculin singulier, consonne\n" +
+                   "• Cet ordinateur est rapide → masculin singulier, voyelle\n" +
+                   "• Cette idée est intéressante → féminin singulier\n" +
+                   "Règle rapide :\n" +
+                   "1. Masculin singulier + consonne → ce\n" +
+                   "2. Masculin singulier + voyelle/h muet → cet\n" +
+                   "3. Féminin singulier → cette"
+        ),
+
+        new ExceptionRule(
             textWhereNoticed: "Je voudrais un verre de vin",
             mainActor: "« de » after quantity",
             explanation: "En français, lorsqu’un nom est précédé d’une expression de quantité ou d’une mesure (un verre, une bouteille, un kilo, beaucoup, peu, trop), on utilise uniquement « de » devant le nom et **pas le partitif du / de la / des**. La quantité spécifie déjà combien, donc le partitif n’est pas nécessaire.",
