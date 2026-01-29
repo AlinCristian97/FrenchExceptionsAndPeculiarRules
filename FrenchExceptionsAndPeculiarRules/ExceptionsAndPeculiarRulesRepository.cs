@@ -5,6 +5,19 @@ public class ExceptionsAndPeculiarRulesRepository
     public readonly List<ExceptionRule> ExceptionsAndPeculiarRules = new()
     {
         new ExceptionRule(
+            textWhereNoticed: "Il est un peu fatigué / Le français devient un peu plus souple",
+            mainActor: "un peu",
+            explanation: "L’expression « un peu » combine l’article indéfini « un » et le nom « peu » pour former une **locution adverbiale**. " +
+                         "Elle modifie un adjectif ou un adverbe, indiquant la quantité ou le degré : « un peu fatigué » → légèrement fatigué.",
+            notes: "Exemples :\n" +
+                   "• Il est un peu fatigué → adverbe modifiant l’adjectif fatigué\n" +
+                   "• Le français devient un peu plus souple → adverbe modifiant l’adverbe plus\n" +
+                   "• Un peu de sucre → ici peu = nom, un = article → signifie une petite quantité (différent de adverbial)\n" +
+                   "Règle rapide : quand un peu précède un adjectif/adverbe → adverbe ; quand il précède de + nom → nom + article"
+        ),
+
+
+        new ExceptionRule(
             textWhereNoticed: "Ce livre est intéressant / Cet homme est gentil / Cette voiture est rouge",
             mainActor: "ce / cet / cette",
             explanation: "En français, les adjectifs démonstratifs changent selon le genre, le nombre et la première lettre du nom :\n" +
