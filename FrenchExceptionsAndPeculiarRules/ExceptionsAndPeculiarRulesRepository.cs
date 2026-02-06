@@ -5,6 +5,20 @@ public class ExceptionsAndPeculiarRulesRepository
     public readonly List<ExceptionRule> ExceptionsAndPeculiarRules = new()
     {
         new ExceptionRule(
+            textWhereNoticed: "Il est censé arriver à midi / Je suis censé finir ce travail",
+            mainActor: "censer",
+            explanation: "Le verbe « censer » est un verbe régulier du 1er groupe (-ER), donc il se conjugue normalement. " +
+                         "Cependant, il est rarement utilisé et apparaît presque toujours dans l’expression **« être censé + infinitif »**, " +
+                         "qui signifie « être supposé faire quelque chose » : « Il est censé arriver à midi » → « He is supposed to arrive at noon ».",
+            notes: "Exemples :\n" +
+                   "• Je suis censé finir ce travail aujourd’hui → I’m supposed to finish this work today\n" +
+                   "• Il est censé comprendre les instructions → He is supposed to understand the instructions\n" +
+                   "• Présent : je cense, tu censes, il cense, nous censons, vous censez, ils censent\n" +
+                   "• Participe passé : censé (utilisé avec « être » dans l’expression)\n" +
+                   "Règle rapide : verbe régulier -ER → conjuguer normalement ; expression fréquente → « être censé + infinitif »."
+        ),
+
+        new ExceptionRule(
                 textWhereNoticed: "un nouvel épisode / un nouveau film / un épisode intéressant",
                 mainActor: "nouveau / nouvel",
                 explanation: "L’adjectif « nouveau » appartient au groupe BAGS (Beauty, Age, Goodness, Size) et **se place avant le nom**. " +
