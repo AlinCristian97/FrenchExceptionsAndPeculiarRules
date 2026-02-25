@@ -5,6 +5,19 @@ public class ExceptionsAndPeculiarRulesRepository
     public readonly List<ExceptionRule> ExceptionsAndPeculiarRules = new()
     {
         new ExceptionRule(
+            textWhereNoticed: "Regarde-moi le culot de ce gamin ! / Regarde-moi ce bordel !",
+            mainActor: "Regarde-moi + [expression]",
+            explanation: "L’expression « regarde-moi » suivie d’un nom ou d’une phrase sert à **attirer l’attention sur quelque chose de surprenant, audacieux ou scandaleux**. " +
+                         "Grammaticalement, « regarde-moi » signifie littéralement « regarde-moi », mais ici c’est **idiomatique** et ne renvoie pas à 'moi' personnellement. " +
+                         "Cette construction est très fréquente à l’oral pour exprimer l’indignation, la surprise ou l’emphase.",
+            notes: "Exemples :\n" +
+                   "• Regarde-moi le culot de ce gamin ! → Can you believe the nerve of this kid!\n" +
+                   "• Regarde-moi ce bordel ! → Look at this mess!\n" +
+                   "• Regarde-moi ce scandale ! → Check out this scandal!\n" +
+                   "Règle rapide : « Regarde-moi + [nom / expression] » = exprime surprise, indignation ou emphase, très courant à l’oral, idiomatique."
+        ),
+
+        new ExceptionRule(
             textWhereNoticed: "Nul ne doit souiller ce mur / Personne ne peut entrer",
             mainActor: "nul / personne / rien + ne without pas",
             explanation: "Lorsque le sujet est un mot négatif comme « nul », « personne » ou « rien », le « ne » placé après le sujet suffit pour marquer la négation. " +
