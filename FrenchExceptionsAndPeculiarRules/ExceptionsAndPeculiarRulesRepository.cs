@@ -5,6 +5,19 @@ public class ExceptionsAndPeculiarRulesRepository
     public readonly List<ExceptionRule> ExceptionsAndPeculiarRules = new()
     {
         new ExceptionRule(
+            textWhereNoticed: "Nul ne doit souiller ce mur / Personne ne peut entrer",
+            mainActor: "nul / personne / rien + ne without pas",
+            explanation: "Lorsque le sujet est un mot négatif comme « nul », « personne » ou « rien », le « ne » placé après le sujet suffit pour marquer la négation. " +
+                         "On n’ajoute pas « pas » dans ce type de construction. Cette règle s’emploie surtout en français formel ou littéraire.",
+            notes: "Exemples :\n" +
+                   "• Nul ne doit souiller ce mur → No one must soil this wall\n" +
+                   "• Personne ne peut entrer → No one can enter\n" +
+                   "• Rien ne bouge → Nothing moves\n" +
+                   "Incorrect : Nul ne doit pas souiller ce mur\n" +
+                   "Règle rapide : Sujet négatif (nul, personne, rien) → ne + verbe, pas de « pas »."
+        ),
+
+        new ExceptionRule(
             textWhereNoticed: "Il est censé arriver à midi / Je suis censé finir ce travail",
             mainActor: "censer",
             explanation: "Le verbe « censer » est un verbe régulier du 1er groupe (-ER), donc il se conjugue normalement. " +
