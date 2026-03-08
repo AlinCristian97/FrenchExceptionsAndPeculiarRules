@@ -5,6 +5,25 @@ public class ExceptionsAndPeculiarRulesRepository
     public readonly List<ExceptionRule> ExceptionsAndPeculiarRules = new()
     {
         new ExceptionRule(
+            textWhereNoticed: "Les fleurs sont rouges / des yeux marron / des drapeaux bleu blanc rouge",
+            mainActor: "color adjectives agreement",
+            explanation: "En français, la plupart des adjectifs de couleur s’accordent normalement en genre et en nombre avec le nom qu’ils décrivent. " +
+                         "Cependant, certaines couleurs ne s’accordent pas lorsqu’elles proviennent à l’origine d’un nom (fruit, objet, matière) ou lorsqu’on combine plusieurs couleurs.",
+            notes: "1. Couleurs normales → accord avec le nom\n" +
+                   "• une fleur rouge → singulier\n" +
+                   "• des fleurs rouges → pluriel\n" +
+                   "• une voiture bleue → féminin\n\n" +
+                   "2. Couleurs provenant d’un nom → pas d’accord\n" +
+                   "• des yeux marron\n" +
+                   "• des robes orange\n" +
+                   "• des chaussures chocolat\n\n" +
+                   "3. Plusieurs couleurs ensemble → pas d’accord\n" +
+                   "• des drapeaux bleu blanc rouge\n" +
+                   "• des chemises vert et bleu\n\n" +
+                   "Règle rapide : couleurs normales → accord ; couleurs venant d’un nom ou combinaison de couleurs → pas d’accord."
+        ),
+
+        new ExceptionRule(
             textWhereNoticed: "un bel homme / un vieil arbre / un nouvel appartement",
             mainActor: "beau / bel, vieux / vieil, nouveau / nouvel",
             explanation: "Certains adjectifs masculins singuliers changent de forme devant un nom commençant par une voyelle ou un h muet. " +
