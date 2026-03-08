@@ -5,6 +5,49 @@ public class ExceptionsAndPeculiarRulesRepository
     public readonly List<ExceptionRule> ExceptionsAndPeculiarRules = new()
     {
         new ExceptionRule(
+            textWhereNoticed: "un bel homme / un vieil arbre / un nouvel appartement",
+            mainActor: "beau / bel, vieux / vieil, nouveau / nouvel",
+            explanation: "Certains adjectifs masculins singuliers changent de forme devant un nom commençant par une voyelle ou un h muet. " +
+                         "Cette transformation existe pour **éviter deux voyelles consécutives et rendre la prononciation plus fluide**. " +
+                         "Ainsi, les adjectifs « beau », « vieux » et « nouveau » prennent une forme spéciale : « bel », « vieil » et « nouvel ». " +
+                         "Cette règle relève de l’euphonie (harmonie des sons) en français.",
+            notes: "Formes :\n" +
+                   "• beau → bel (devant voyelle/h muet)\n" +
+                   "• vieux → vieil\n" +
+                   "• nouveau → nouvel\n\n" +
+                   "Exemples :\n" +
+                   "• un beau livre → consonne\n" +
+                   "• un bel homme → voyelle\n" +
+                   "• un vieux château → consonne\n" +
+                   "• un vieil arbre → voyelle\n" +
+                   "• un nouveau film → consonne\n" +
+                   "• un nouvel appartement → voyelle\n\n" +
+                   "Règle rapide : masculin singulier + voyelle/h muet → bel, vieil, nouvel."
+        ),
+
+        new ExceptionRule(
+            textWhereNoticed: "une belle maison / un petit chat / un jeune homme / un bon repas",
+            mainActor: "BAGS adjectives",
+            explanation: "En français, la plupart des adjectifs se placent **après le nom**, mais un petit groupe d’adjectifs très courants se place **avant le nom**. " +
+                         "On les regroupe souvent sous l’acronyme **BAGS**, qui signifie : Beauty, Age, Goodness, Size. " +
+                         "Ces adjectifs sont courts, fréquents et décrivent des qualités générales plutôt que des caractéristiques détaillées.",
+            notes: "BAGS = adjectifs placés avant le nom :\n" +
+                   "• Beauty (beauté) : beau, joli\n" +
+                   "• Age (âge) : jeune, vieux, nouveau, ancien\n" +
+                   "• Goodness (qualité) : bon, mauvais, meilleur\n" +
+                   "• Size (taille) : petit, grand, gros\n\n" +
+                   "Exemples :\n" +
+                   "• une belle maison → beauty\n" +
+                   "• un jeune homme → age\n" +
+                   "• un bon repas → goodness\n" +
+                   "• un petit chat → size\n\n" +
+                   "Comparaison :\n" +
+                   "• un petit chat noir → BAGS avant, descriptif après\n" +
+                   "• une voiture rouge → adjectif descriptif normal, après le nom\n\n" +
+                   "Règle rapide : la majorité des adjectifs vont après le nom, mais les adjectifs BAGS vont généralement avant."
+        ),
+
+        new ExceptionRule(
             textWhereNoticed: "Regarde-moi le culot de ce gamin ! / Regarde-moi ce bordel !",
             mainActor: "Regarde-moi + [expression]",
             explanation: "L’expression « regarde-moi » suivie d’un nom ou d’une phrase sert à **attirer l’attention sur quelque chose de surprenant, audacieux ou scandaleux**. " +
