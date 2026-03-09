@@ -5,6 +5,24 @@ public class ExceptionsAndPeculiarRulesRepository
     public readonly List<ExceptionRule> ExceptionsAndPeculiarRules = new()
     {
         new ExceptionRule(
+            textWhereNoticed: "Il est vingt-deux heures et quart / Il est onze heures moins le quart",
+            mainActor: "et quart / moins le quart",
+            explanation: "En français, les expressions pour indiquer « quarter past » et « quarter to » suivent une règle asymétrique :\n" +
+                         "- « et quart » (quarter past) s’utilise **sans article** : « Il est trois heures et quart ».\n" +
+                         "- « moins le quart » (quarter to) **nécessite l’article défini « le »** : « Il est quatre heures moins le quart ».\n" +
+                         "Cette différence est idiomatique et fait partie des expressions figées pour dire l’heure.",
+            notes: "Exemples :\n" +
+                   "• 3:15 → « Il est trois heures et quart » (pas : et le quart)\n" +
+                   "• 10:45 → « Il est onze heures moins le quart »\n" +
+                   "• 5:45 → « Il est six heures moins le quart »\n" +
+                   "Incorrect : « Il est vingt-deux heures et le quart »\n" +
+                   "Incorrect : « Il est onze heures moins quart »\n" +
+                   "Règle rapide :\n" +
+                   "Quarter past → « et quart » (sans « le »)\n" +
+                   "Quarter to → « moins le quart » (avec « le »)"
+        ),
+
+        new ExceptionRule(
             textWhereNoticed: "Les fleurs sont rouges / des yeux marron / des drapeaux bleu blanc rouge",
             mainActor: "color adjectives agreement",
             explanation: "En français, la plupart des adjectifs de couleur s’accordent normalement en genre et en nombre avec le nom qu’ils décrivent. " +
