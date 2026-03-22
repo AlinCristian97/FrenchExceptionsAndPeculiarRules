@@ -5,6 +5,35 @@ public class ExceptionsAndPeculiarRulesRepository
     public readonly List<ExceptionRule> ExceptionsAndPeculiarRules = new()
     {
         new ExceptionRule(
+            textWhereNoticed: "Je parlais / Nous finissions / Ils faisaient",
+            mainActor: "imparfait formation steps",
+            explanation: "L’imparfait en français se forme de manière très régulière. " +
+                         "Pour trouver la base correcte, on utilise la forme « nous » du présent. " +
+                         "Ensuite, on enlève « -ons » et on ajoute les terminaisons de l’imparfait.",
+            notes: "Étapes pour former l’imparfait :\n" +
+                   "1. Trouver la forme « nous » au présent.\n" +
+                   "2. Enlever la terminaison « -ons ».\n" +
+                   "3. Ajouter les terminaisons de l’imparfait :\n" +
+                   "   • -ais\n" +
+                   "   • -ais\n" +
+                   "   • -ait\n" +
+                   "   • -ions\n" +
+                   "   • -iez\n" +
+                   "   • -aient\n\n" +
+                   "Exemples :\n" +
+                   "Parler :\n" +
+                   "• Nous parlons → base : parl-\n" +
+                   "• Je parlais, tu parlais, il parlait, nous parlions, vous parliez, ils parlaient\n\n" +
+                   "Finir :\n" +
+                   "• Nous finissons → base : finiss-\n" +
+                   "• Je finissais, tu finissais, il finissait, nous finissions, vous finissiez, ils finissaient\n\n" +
+                   "Verbe irrégulier important :\n" +
+                   "• Être → nous sommes → base : ét-\n" +
+                   "• j’étais, tu étais, il était, nous étions, vous étiez, ils étaient\n\n" +
+                   "Règle rapide : base = nous (présent) - ons, puis ajouter les terminaisons de l’imparfait."
+        ),
+
+        new ExceptionRule(
             textWhereNoticed: "Je suis allé au cinéma / Elle est arrivée tôt / Ils sont venus hier",
             mainActor: "DR MRS VANDERTRAMP (passé composé with être)",
             explanation: "En français, la majorité des verbes utilisent l’auxiliaire « avoir » au passé composé. " +
