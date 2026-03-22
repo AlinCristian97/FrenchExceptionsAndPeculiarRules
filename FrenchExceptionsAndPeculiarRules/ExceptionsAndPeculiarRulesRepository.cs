@@ -5,6 +5,48 @@ public class ExceptionsAndPeculiarRulesRepository
     public readonly List<ExceptionRule> ExceptionsAndPeculiarRules = new()
     {
         new ExceptionRule(
+            textWhereNoticed: "Je suis allé au cinéma / Elle est arrivée tôt / Ils sont venus hier",
+            mainActor: "DR MRS VANDERTRAMP (passé composé with être)",
+            explanation: "En français, la majorité des verbes utilisent l’auxiliaire « avoir » au passé composé. " +
+                         "Cependant, un groupe important de verbes utilise l’auxiliaire « être ». " +
+                         "On mémorise souvent ces verbes avec l’acronyme **DR MRS VANDERTRAMP**. " +
+                         "Ces verbes expriment généralement un mouvement ou un changement d’état. " +
+                         "Avec l’auxiliaire « être », le participe passé s’accorde en genre et en nombre avec le sujet.",
+            notes: "DR MRS VANDERTRAMP :\n" +
+                   "• Devenir\n" +
+                   "• Revenir\n" +
+                   "• Mourir\n" +
+                   "• Rester\n" +
+                   "• Sortir\n" +
+                   "• Venir\n" +
+                   "• Arriver\n" +
+                   "• Naître\n" +
+                   "• Descendre\n" +
+                   "• Entrer\n" +
+                   "• Rentrer\n" +
+                   "• Tomber\n" +
+                   "• Retourner\n" +
+                   "• Aller\n" +
+                   "• Monter\n" +
+                   "• Partir\n\n" +
+                   "Exemples :\n" +
+                   "• Je suis allé au cinéma.\n" +
+                   "• Elle est arrivée tôt.\n" +
+                   "• Ils sont partis hier.\n" +
+                   "• Elle est née en 2001.\n\n" +
+                   "Accord du participe passé :\n" +
+                   "• Il est arrivé.\n" +
+                   "• Elle est arrivée.\n" +
+                   "• Ils sont arrivés.\n" +
+                   "• Elles sont arrivées.\n\n" +
+                   "Note importante : certains de ces verbes utilisent « avoir » lorsqu’ils ont un objet direct.\n" +
+                   "Exemples :\n" +
+                   "• Je suis monté. (pas d’objet)\n" +
+                   "• J’ai monté les valises. (objet direct)\n\n" +
+                   "Règle rapide : verbes DR MRS VANDERTRAMP → passé composé avec « être » + accord du participe passé."
+        ),
+
+        new ExceptionRule(
             textWhereNoticed: "Il est vingt-deux heures et quart / Il est onze heures moins le quart",
             mainActor: "et quart / moins le quart",
             explanation: "En français, les expressions pour indiquer « quarter past » et « quarter to » suivent une règle asymétrique :\n" +
