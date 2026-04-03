@@ -368,5 +368,20 @@ public class ExceptionsAndPeculiarRulesRepository
                    "Règle rapide : l’expression « il y a » est fixe ; le verbe ne change jamais, quelle que soit la quantité ou le nombre du nom."
         ),
 
+        new ExceptionRule(
+            textWhereNoticed: "l’homme / le héros / les‿hommes / les héros",
+            mainActor: "h aspiré / h muet",
+            explanation: "En français, la lettre « h » initiale peut être soit un **h muet**, soit un **h aspiré**. " +
+                         "Avec un h muet, on fait l’élision et la liaison : « l’homme », « les‿hommes ». " +
+                         "Avec un h aspiré, on bloque l’élision et la liaison : « le héros », « les héros ». " +
+                         "La difficulté vient du fait que les deux s’écrivent avec « h », mais leur comportement phonétique et grammatical n’est pas le même.",
+            notes: "Exemples :\n" +
+                   "• h muet : « l’homme », « l’histoire », « les‿habitudes »\n" +
+                   "• h aspiré : « le héros », « la honte », « les haricots » (pas de liaison)\n" +
+                   "• On dit : « des héros » et non « des‿héros »\n" +
+                   "Incorrect : « l’héros », « les‿haricots »\n" +
+                   "Règle rapide : h muet → élision/liaison possibles ; h aspiré → pas d’élision, pas de liaison."
+        ),
+
     };
 }
